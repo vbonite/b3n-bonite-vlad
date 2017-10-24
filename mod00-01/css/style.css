@@ -1,0 +1,48 @@
+body {
+	background-color: maroon;
+	background: url("../img/background_image.jpg") no-repeat; 
+	background-size: cover;
+	background-attachment: fixed;
+
+	color: snow;
+	font-family: 'Droid Serif', serif;
+
+}
+
+h1 {
+	margin-bottom: 10px;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	letter-spacing: 1px;	
+}
+
+p {
+	margin-top: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+}
+
+#profile_vlad {
+	height: 200px;
+	border-radius: 2.5%;
+	border-style: solid;
+	border-width: 3px;
+	border-color: snow;
+	margin-top: 1cm;
+}
+
+.about {
+	width: 100%;
+}
+
+.container {
+	width: 550px;
+	margin: 0 auto;
+	text-align: center;
+}
