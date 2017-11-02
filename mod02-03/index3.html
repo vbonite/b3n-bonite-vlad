@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale-1.0">
+	<meta name="X-UA-Compatible" content="IE-Edge">
+
 	<title>DOM Activity 3</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	
 	<header>
 		<h1>TUITT CODING BOOTCAMP</h1>
 	</header>
 
 	<main>
-
 		<section>
-			<h1><i class="fa fa-home"></i>Dashboard</h1>
-			<i class="fa fa-file-text-o">5 posts</i>
-			<i class="fa fa-file-image-o">13 images</i>
+			<h3><i class="fa fa-home"></i>Dashboard</h3>
+			<!-- posts and images -->
+			<div>	
+				<div>
+					<div>
+						<i class="fa fa-file-text-o"></i>
+					</div>
+					<p>5</p>
+					<p>posts</p>
+				</div>
+
+				<div>
+					<div>	
+						<i class="fa fa-file-image-o"></i>	
+					</div>
+					<p>13</p>
+					<p>images</p>
+				</div>
+			</div>
 		</section>
 
 		<section>
-			<h1>New Post</h1>
+			<h3><i class="fa fa-plus-circle"></i>New Post</h3>
 			<form action="" method="">
 				<input type="text" name="posttitle" placeholder="Enter your post title">
 				<br>
-				<input style="height: 48px" type="text" name="postcontent" placeholder="Enter post content here">
+				<textarea placeholder="Enter post content here"></textarea>
 				<br>
 				<input type="submit" name="publish" value="Publish">
 			</form>
 		</section>
 
 		<section>
-			<h1><i class="fa fa-cloud-upload"></i>Upload Image</h1>
-			<form>
-				<img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif">
-				<img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif">
-				<img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif">
-				<img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif">
-				<img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif">
-				<br>
-				<input type="file" name="browse" value="Browse" class="hidden">
-				<input type="submit" name="upload" value="Upload">
-			</form>
-		</section>
+			<h3><i class="fa fa-cloud-upload"></i>Upload Image</h3>
 
+			<ul>
+				<li><a href="#"><img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif"></a></li>
+				<li><a href="#"><img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif"></a></li>
+				<li><a href="#"><img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif"></a></li>
+				<li><a href="#"><img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif"></a></li>
+				<li><a href="#"><img src="http://www.ebase.co.jp/ebase_conference_partner/images/no_image.gif"></a></li>
+			</ul>
+
+			<form action="" method="">
+				<input type="file" name="" hidden>
+				<button type="button">Browse</button>
+				<button type="submit">Uplaod</button>
+			</form>	
+		</section>
 	</main>
 
 	<footer>
-		Tuitt Coding Bootcamp &copy; 2017
+		<p>Tuitt Coding Bootcamp &copy; 2017</p>
 	</footer>
 </body>
 </html>
