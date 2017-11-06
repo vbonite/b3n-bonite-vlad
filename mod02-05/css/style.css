@@ -1,0 +1,63 @@
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /*will center wrapper*/
+	border: 2px solid black;
+	padding: 20px;
+}
+
+a:link {
+	color: #008000;
+}
+
+a:visited {
+	color: #006666;
+}
+
+a:focus {
+	color: #992600;
+}
+
+a:hover {
+	background-color: lightgrey;
+}
+
+main.wrapper:hover {
+	background-color: lightblue;
+}
+
+a:active {
+	color: #004d99;
+}
+
+p,
+#test,
+.spans,
+.box p {
+	color: #99004d;
+}
+
+/*attribute selector*/
+a[target="_blank"] {
+	background-color: yellow;
+}
+
+p span#dark_bg {
+	color: white;
+	background-color: black;
+}
+
+div + p {
+	background-color: lightgreen;
+}
+
+div	~p {
+	background-color: red;
+}
+
+div > p {
+	background-color: blue;
+}
+
+div	div	p {
+	background-color: orange;
+}
