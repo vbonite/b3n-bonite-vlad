@@ -83,18 +83,24 @@ main {
 	padding: 20px;
 }
 
+.main-dashboard {
+	margin-top: 20px;
+}
+
 .img-set {
 
 	height: 100px;
 	width: 100px;
-	background-color: #4e3884;
-	padding: 5px;
+	background-color: #a6a6a6;
+	padding: 3px;
 	border-radius: 0px;
 	margin: 0 5px;
 }
 
 .img-set-holder {
 	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .inline-blocked {
@@ -125,18 +131,22 @@ body {
 
 header {
 	background-color: #1c2033;
-	height: 70px;
+	height: 50px;
 	color: white;
 	text-align: center;
-	line-height: 70px;
+	line-height: 50px;
 	font-size: 10px;
 	font-family: 'Titillium Web', sans-serif;
 }
 
 footer {
-	background-color: #a6a6a6;
-	height: 40px;
+	background-color: #1c2033;
+	height: 35px;
 	color: #ffffff;
-	line-height: 40px;
+	line-height: 35px;
 	text-align: center;
+}
+
+body {
+	background-color: #c9c6c5;
 }
