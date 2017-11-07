@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	border: 1px solid grey;
+	width: 70%;
+	margin: 0 auto;
+
+}
+
+div.wrapper > div {
+	background-color: skyblue;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+h1,
+p {
+	background-color: #dde0e3;
+}
+
+/*from inline type to block elements*/
+
+em,
+strong {
+	background-color: #b2d6ff;
+	display: inline;
+}
+
+h1 {
+	/*padding: top 10px 20px 30px 40px;*/
+	padding: 50px;
+	border: 1px solid #5d0603;
+
+}
+
+strong {
+	/*padding: 50px;*/
+	margin: 50px;
+}
+
+p {
+	padding: 20px 0 20px 10px;
+	/*margin-bottom: 50px;*/
+	margin-top: 25px;
+}
