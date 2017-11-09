@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+}
+
+.grandparent {
+	background-color: skyblue;
+}
+
+.parent {
+	background-color: pink;
+}
+
+div	{
+	padding: 20px;
+}
+
+p {
+	position: static;
+	margin-left: 50px;
+	/*margin-top: -20px;*/
+}
+
+input[name="firstname"] {
+	margin-right: 20px;
+}
+
+strong {
+	background-color: yellow;
+}
