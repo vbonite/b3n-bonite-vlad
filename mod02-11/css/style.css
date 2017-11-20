@@ -327,8 +327,37 @@
 
 
 .menu ul li {
+	background-color: grey;
 	display: block;
 	float: left;
+	margin: 25px 5px 25px; 
+
+}
+
+.menu ul {
+	float: left;
+}
+
+
+.baguio {
+	margin-bottom: 15px;
+}
+
+.beautiful_baguio {
+	float: left;
+}
+
+.baguio_box {
+	background-color: grey;
+	width: 150px;
+	height: 100px;
+	margin-right: 5px;
+	float: left;
+}
+
+.para_last {
+	margin-bottom: 15px;
+	font-style: italic;
 }
 
 
