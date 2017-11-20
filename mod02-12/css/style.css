@@ -1,0 +1,58 @@
+/*remove default margin to top*/
+body {
+	margin: 0;
+}
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+.logo {
+	background-color: darkgrey;
+	width: 140px;
+	height: 140px;
+}
+
+.nav {
+	background-color: lightyellow;
+	height: 100%;
+}
+
+.main {
+	background-color: grey;
+}
+
+.banner {
+	background-color: skyblue;
+}
+
+.about {
+	background-color: indianred;
+	height: 700px;
+}
+
+.services {
+	background-color: midnightblue;
+	height: 300px;
+}
+
+.projects {
+	background-color: crimson;
+	height: 300px;
+}
+
+.gallery {
+	background-color: orange;
+	height: 400px;
+}
+
+.footer {
+	background-color: green;
+	height: 70px;
+}
