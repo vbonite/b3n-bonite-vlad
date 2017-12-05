@@ -138,14 +138,17 @@
 	margin-bottom: 20px;
 }
 
-.history-parallax {
-	padding: -60px -80px -20px;
+.history-bg {
+	background-image: url("../img/history.png");
+	min-height: 95vh;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 
 .parallax-window {
 	margin-top: -20px;
-    height: 50vh;
+    height: 75vh;
     background: transparent;
     width: 100%;
     padding: 0;
