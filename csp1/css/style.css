@@ -1,22 +1,51 @@
-.navbar {
-	position: fixed;
-	z-index: 20;
-	width: 100%;
-	border-radius: 0;
-	opacity: 0.8;
-	color: #fff;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
+.navbar {
+	position: fixed;
+	color: #fff;
+	width: 100%;
+	line-height: 80px;
+	border-radius: 0;
+	background: transparent;
+	z-index: 100;
+	border: none;
+	transition: all .5s;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+
+}
+
+.nav .active {
+	background: #fff;
+	opacity: 0.3;
+}
+
+#btn-apply-nav {
+	border-radius: 0;
+	padding: 10px 10px 10px;
+}
+
+.scrolled-navbar {
+	background: #000;
+	opacity: 1;
+}
 
 .banner {
 	height: 100vh;
 	width: 100%;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 }
 
 .bg-img {
 	background-image: url("../img/home.jpg");
 	position: absolute;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -44,30 +73,48 @@
 .text-box {
 	position: relative;
 	top: 50%;
-	left: 10%;
+	left: 50%;
 	float: left;
-	border-left: 4px solid #fff;
-	transform: translate(55%, -55%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+.text-box p {
+	text-align: center;
+	line-height: 5px;
 }
 
 #circle {
 	position: inherit;
 	top: 50%;
 	left: 50%;
-	transform: translate(-51%, 12%);
+	transform: translate(-50%, -50%);
+	font-weight: 200;
+	font-size: 72px;
 }
 
-#family {
-	position: inherit;
-	top: 50%;
-	left: 50%;
-	transform: translate(-75%, -20%);
+
+
+#btn-apply {
+	border-radius: 0;
+	float: right;
+	padding: 10px 10px 10px;
 }
 
-.clear:after {
-	content: "";
-	clear: both;
-	display: block;
+.about-us {
+	width: 100%;
+	min-height: 400px;
+}
+
+
+.about-us-org {
+	width: 100%;
+	padding-top: 25px;
+}
+
+.about-us-org h2 {
+	color: #5E7EC1;
 }
 
 .history {
@@ -79,13 +126,22 @@
 	bottom: 0;
 }
 
-.history-bg	{
-	background-image: url("../img/the_org.png");
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	z-index: -10;
+
+
+.parallax-window {
+	margin-top: -20px;
+    height: 100vh;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+}
+
+.row {
+	margin-top: 0px;
+}
+
+.clear:after {
+	content: "";
+	clear: both;
+	display: block;
 }

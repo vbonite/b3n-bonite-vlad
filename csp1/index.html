@@ -9,14 +9,20 @@
 	<title>UP CIEM | Home</title>
 
 	<!-- Import bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="_bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- Import custom css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Font Styles -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+
+	<!-- font-family: 'Raleway', sans-serif;
+		 font-family: 'Lato', sans-serif; -->
 </head>
 <body>
 
-	<nav class="navbar navbar-inverse nav-fixed-top">
+	<nav id="nav-animated" class="navbar navbar-inverse nav-fixed-top">
  		<div class="container-fluid">
     	<!-- Brand and toggle get grouped for better mobile display -->
     		<div class="navbar-header">
@@ -32,13 +38,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav">
-			        <li class="active"><a href="#">About Us <span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">News</a></li>
+			        <li class="active"><a href="#about-us">About Us <span class="sr-only">(current)</span></a></li>
 			        <li><a href="#">Projects and Events</a></li>
-			        <li><a href="#">IEshikawa</a></li>
-			        <li><a href="#">Apply</a></li>
-			        <li><a href="#">Corporate Sponsors</a></li>
+			        <li><a href="#">Members</a></li>
 			        <li><a href="#">Contact Us</a></li>
+			        <li><a id="btn-apply-nav" class="btn btn-primary btn-lg" href="#" role="button">Apply Now</a></li>
 		      	</ul>
 		    </div><!-- /.navbar-collapse -->
   		</div><!-- /.container-fluid -->
@@ -51,11 +55,10 @@
 				<div class="black-overlay"></div>
 			  	<div class="container clear">
 			  		<div class="text-box ">
-				    	<h1 id="circle">One Circle.</h1> 
-				    	<h1 id="family">One Family.</h1>
+				    	<p id="circle" class="title">One Circle. One Family.</p>
 					  	<p>UNIVERSITY OF THE PHILIPPINES</p>
 					  	<p>CIRCLE OF INDUSTRIAL ENGINEERING MAJORS</p>
-					  	<p><a class="btn btn-primary btn-lg" href="#" role="button">Down</a></p>
+					  	<p><a id="btn-apply" class="btn btn-primary btn-lg" href="#" role="button">Apply Now</a></p>
 			  		</div>
 			  	</div>
 			</div>
@@ -64,18 +67,31 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="about-us">
+			<div id="about-us" class="about-us">
 				<div class="about-us-org">
-					<h2>The Organization</h2>
-					<p>The University of the Philippines Circle of Industrial Engineering Majors (UP CIEM) is a duly recognized academic organization based under the Department of Industrial Engineering and Operations Research, College of Engineering, UP Diliman. Upholding the holistic development of its members, UP CIEM consistently made its mark through rendering service to the college, the university and the country.
+					<div class="col-lg-6">
+						<h2>The Organization</h2>
+						<p>The University of the Philippines Circle of Industrial Engineering Majors (UP CIEM) is a duly recognized academic organization based under the Department of Industrial Engineering and Operations Research, College of Engineering, UP Diliman. Upholding the holistic development of its members, UP CIEM consistently made its mark through rendering service to the college, the university and the country.</p>
+					</div>
 
-					The organization has a clear vision for its members. First, to notice that the organization is more than just a collection of people. Next is, to realize that being a member of CIEM gives them the the opportunity to discover the boundaries of their personality and become an even better version of themselves. And lastly, to be humble, not one that bows their head and keeps their opinion to themselves, but one who has dignity and is able to stand and lead a crowd without having to step on another person. More than being an organization, UP CIEM continues to be the family of camaraderie and trust for the Industrial Engineering student body and the sanctuary of excellent Industrial Engineers for the nation's future. 
+					<div class="col-lg-6">
+					<p>The organization has a clear vision for its members. First, to notice that the organization is more than just a collection of people. Next is, to realize that being a member of CIEM gives them the the opportunity to discover the boundaries of their personality and become an even better version of themselves. And lastly, to be humble, not one that bows their head and keeps their opinion to themselves, but one who has dignity and is able to stand and lead a crowd without having to step on another person. More than being an organization, UP CIEM continues to be the family of camaraderie and trust for the Industrial Engineering student body and the sanctuary of excellent Industrial Engineers for the nation's future.</p>
 
-					This is UP CIEM - One Circle, One Family.</p>
+					<p>This is UP CIEM - One Circle, One Family.</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- parallax segment -->
+		<div class="row">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/the_org.png">
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="container-fluid">
 		<div class="row">
 			<div class="history">
 				<div class="history-bg"></div>
@@ -90,7 +106,11 @@
 						With 38 years of significant existence in the UP College of Engineering, UP CIEM chooses no other path but to advance excellence in the grandest manner. UP CIEM remains true to its foundation, providing an organization of support, assistance and relationships to the students.</p>
 					</div>
 				</div>	
-			</div>		
+			</div>
+		</div>
+
+		<div class="row">
+					
 		</div>
 
 		<div class="row">
@@ -125,8 +145,11 @@
 				</div>
 			</div>
 		</div>
+
 		
-	</div>
+	</div><!-- container fluid -->
+
+	
 		
 
 
@@ -136,7 +159,14 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 	<!-- Import bootstrap js -->
-	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="_bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<!-- Import parallax jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="_parallax.js-1.5.0/parallax.js"></script>
+
+	<!-- Import Nav Scroll js -->
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
