@@ -17,7 +17,6 @@
 	transition: all .5s;
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-
 }
 
 .active a{
@@ -47,6 +46,7 @@
 }
 
 .banner {
+	padding: 0;
 	height: 100vh;
 	width: 100%;
 }
@@ -125,7 +125,6 @@
 .section-right {
 	padding: 60px 80px 20px 10px;
 	width: 100%;
-	min-height: 400px;
 	text-align: justify;
 	font-family: 'Lato', sans-serif;
 }
@@ -153,12 +152,19 @@
 	margin-bottom: 20px;
 }
 
+.history {
+	padding-top: 80px;
+	padding-left: 60px;
+}
+
 .history-bg {
-	background-image: url("../img/history.png");
-	min-height: 95vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin: 10px;
+	width: 100%;
+	padding-left: 60px;
+}
+
+.projects-events {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .events-main {
@@ -205,6 +211,8 @@
 
 .events-img-desc {
 	position: absolute;
+	text-align: center;
+	width: 100%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -212,8 +220,12 @@
 	transition: 0.5s ease;
 }
 
+.events-img-text {
+	font-size: 24px;
+}
+
 .events-main:hover .events-img {
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 .events-main:hover .events-main-desc {
@@ -221,7 +233,7 @@
 }
 
 .events-others-box:hover .events-img {
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 .events-others-box:hover .events-img-desc {
@@ -230,10 +242,99 @@
 
 #btn-events {
 	padding: 10px;
+	text-transform: uppercase;
+}
+
+.members {
+	padding: 0;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.section-members {
+	text-align: center;
+	padding: 100px 60px 60px;
+}
+
+.members-bg-img {
+	background-image: url("../img/our-members.jpg");
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	z-index: -10;
+}
+
+.members-header {
+	margin: 0;
+	line-height: 1.5;
+	font-size: 48px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	z-index: 0;	
+}
+
+.exec-board {
+	text-align: center;
+}
+
+.exec-header {
+	margin-top: 60px;
+	padding-top: 20px;
+	line-height: 1;
+	font-size: 32px;
+	color: #5E7EC1;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+.exec-term {
+	line-height: 1;
+	font-size: 20px;
+	color: #5E7EC1;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+.exec-gallery {
+	margin-top: 20px;
+	padding: 20px 0px 20px;
+	width: 80%;
+	text-align: center;
+}
+
+.justify {
+	display: flex;
+	justify-content: space-between;
+}
+
+.profile {
+	padding: 10px 0px 10px;
+	width: 200px;
+}
+
+.profile-name {
+	display: block;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+.profile-title {
+	display: block;
+	color: #5E7EC1;
+	font-size: 12;
+	width: 200px;
 }
 
 .parallax-window {
-	margin-top: -20px;
     height: 75vh;
     background: transparent;
     width: 100%;
@@ -242,7 +343,6 @@
 
 .row {
 	margin-top: 0px;
-	text-transform: uppercase;
 }
 
 .clear:after {
