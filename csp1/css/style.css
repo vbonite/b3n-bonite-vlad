@@ -131,7 +131,7 @@
 }
 
 .section-events {
-	padding: 60px 80px 20px;
+	padding: 60px 100px 20px;
 	width: 100%;
 	text-align: justify;
 	font-family: 'Lato', sans-serif;
@@ -161,28 +161,29 @@
 	margin: 10px;
 }
 
-.event-main {
+.events-main {
 	padding: 10px 10px 20px;
 }
 
-.event-main img {
+.events-main img {
 	width: 100%;
 }
 
-.event-others {
+.events-others {
 	padding: 0;
 }
 
-.event-others-box {
+.events-others-box {
+	position: relative;
 	padding: 10px;
 }
 
-.event-others-box img {
+.events-others-box img {
 	width: 100%;
 }
 
 .projects-events-img {
-	padding: 10px;
+	padding: 10px 20px 20px;
 }
 
 .events-img {
@@ -193,12 +194,42 @@
 	width: 100%;
 }
 
-.event-main:hover .events-img {
+.events-main-desc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.events-img-desc {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.events-main:hover .events-img {
 	opacity: 0.3;
 }
 
-.event-others-box:hover .events-img {
+.events-main:hover .events-main-desc {
+	opacity: 1;
+}
+
+.events-others-box:hover .events-img {
 	opacity: 0.3;
+}
+
+.events-others-box:hover .events-img-desc {
+	opacity: 1;
+}
+
+#btn-events {
+	padding: 10px;
 }
 
 .parallax-window {
@@ -211,6 +242,7 @@
 
 .row {
 	margin-top: 0px;
+	text-transform: uppercase;
 }
 
 .clear:after {
