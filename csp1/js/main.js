@@ -59,8 +59,6 @@ $(document).ready(function(){
           .end().filter("[href='#"+id+"']").parent().addClass("active");
         }                   
     });
-
-
   // nav active switching
   // $('.nav li').click(function(e) {
   //     $('.nav li.active').removeClass('active');
@@ -73,6 +71,7 @@ $(document).ready(function(){
   // Hide all elements with class="expandedImg" (images), except for the one that matches the clickable grid image
 });
 
+    // tab gallery js
     function openImg(imgName) {
     var i, x;
     x = document.getElementsByClassName("expandedImg");
