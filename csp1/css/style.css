@@ -5,9 +5,13 @@
 	font-weight: normal;
 }
 
+.navbar-brand {
+	padding: 0 10px 0;
+	opacity: 0.8;
+}
+
 .navbar {
 	position: fixed;
-	color: #fff;
 	width: 100%;
 	line-height: 80px;
 	border-radius: 0;
@@ -19,10 +23,38 @@
 	text-transform: uppercase;
 }
 
-.active a{
-	color: 
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: transparent;
+    transition: all .5s;
 }
 
+.navbar-inverse.scrolled-navbar .navbar-nav>li>a:focus, 
+.navbar-inverse.scrolled-navbar .navbar-nav>li>a:hover {
+	color: #5E7EC1;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+	background-color: rgba(0, 0, 0, 0.12);
+	transition: all .5s;
+}
+
+.navbar-inverse.scrolled-navbar .navbar-nav>.active>a, 
+.navbar-inverse.scrolled-navbar .navbar-nav>.active>a:focus, 
+.navbar-inverse.scrolled-navbar .navbar-nav>.active>a:hover {
+	color: #5E7EC1;
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+.scrolled-navbar {
+	background: #fff;
+	opacity: 1;
+}
 
 #btn-apply-nav {
 	margin-top: 5px;
@@ -33,16 +65,14 @@
 	transition: all .5s;
 }
 
-.scrolled-navbar {
-	background: #fff;
-	color: #2B3347;
-	opacity: 1;
-}
-
 .scrolled-navbar #btn-apply-nav {
 	background-color: #337ab7;
 	border-color: none;
-	color: #fff;
+	color: #fff !important;
+}
+
+.nav a {
+	transition: 0.5s all ease-out;
 }
 
 .banner {
@@ -119,7 +149,6 @@
 	min-height: 400px;
 	text-align: justify;
 	font-family: 'Lato', sans-serif;
-
 }
 
 .section-right {
@@ -343,6 +372,16 @@
 
 .row {
 	margin-top: 0px;
+}
+
+footer {
+	margin-top: 50px;
+	padding: 15px;
+	line-height: 1.5;
+	font-size: 12px;
+	color: #5E7EC1;
+	text-transform: capitalize;
+	font-weight: 300;
 }
 
 .clear:after {

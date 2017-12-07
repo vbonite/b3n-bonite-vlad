@@ -7,9 +7,9 @@ $(document).ready(function(){
   $(window).scroll(function(){
     scrollTop = $(window).scrollTop();
     
-    if (scrollTop >= 250) {
+    if (scrollTop >= 50) {
       $('.navbar').addClass('scrolled-navbar');
-    } else if (scrollTop < 250) {
+    } else if (scrollTop < 50) {
       $('.navbar').removeClass('scrolled-navbar');
     } 
   }); 
