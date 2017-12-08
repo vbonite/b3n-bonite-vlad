@@ -144,6 +144,7 @@
 	text-transform: uppercase;
 }
 
+/*navbar properties in banner*/
 .navbar-inverse .navbar-nav>li>a:focus, 
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #fff;
@@ -151,12 +152,14 @@
     transition: all .5s;
 }
 
+/*change navbar properties when scrolling down*/
 .navbar-inverse.scrolled-navbar .navbar-nav>li>a:focus, 
 .navbar-inverse.scrolled-navbar .navbar-nav>li>a:hover {
 	color: #5E7EC1;
     background-color: transparent;
 }
 
+/*navbar properties in banner*/
 .navbar-inverse .navbar-nav>.active>a, 
 .navbar-inverse .navbar-nav>.active>a:focus, 
 .navbar-inverse .navbar-nav>.active>a:hover {
@@ -165,6 +168,7 @@
 	transition: all .5s;
 }
 
+/*change navbar properties when scrolling down*/
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a, 
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a:focus, 
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a:hover {
@@ -172,6 +176,8 @@
 	background-color: rgba(0, 0, 0, 0.12);
 }
 
+
+/*change opacity when scrolling down dunno if bg color changes tho lol*/
 .scrolled-navbar {
 	background: #fff;
 	opacity: 1;
@@ -202,6 +208,7 @@
 	width: 100%;
 }
 
+/*landing page caption*/
 .caption {
 	position: absolute;
 	text-transform: uppercase;
@@ -399,6 +406,8 @@
 	text-transform: uppercase;
 }
 
+
+/*members section*/
 .members {
 	padding: 0;
 	margin-top: 40px;
@@ -485,6 +494,8 @@
 	width: 200px;
 }
 
+
+/*parallax formatting*/
 .parallax-window {
     height: 75vh;
     background: transparent;
@@ -497,14 +508,51 @@
 }
 
 footer {
-	margin-top: 50px;
+	margin-top: 60px;
 	padding: 15px;
 	line-height: 1.5;
-	font-size: 12px;
 	color: #5E7EC1;
 	text-transform: capitalize;
 	font-weight: 300;
 }
+
+.trademark {
+	font-size: 12px;
+}
+
+.address {
+	padding: 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.social-media {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	padding: 20px;
+	border-right: 2px solid #5E7EC1; 
+	border-left: 2px solid #5E7EC1; 
+}
+
+.social-media a {
+	margin: 10px 20px 20px;
+}
+
+.social-media img {
+	width: 30px;
+	height: 30px;
+	background-color: #5E7EC1;
+}
+
+.email {
+	padding: 20px;
+	text-transform: lowercase;
+	text-align: center;
+	font-size: 14px;
+}
+
 
 .clear:after {
 	content: "";
