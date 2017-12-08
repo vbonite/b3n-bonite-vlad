@@ -176,12 +176,35 @@
 	background-color: rgba(0, 0, 0, 0.12);
 }
 
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+	border-color: #e0e0e0;
+	transition: all .5s;
+}
+
+.navbar-default.scrolled-navbar .navbar-toggle {
+	border-color: #fff;
+	background-color: #000;
+	transition: all .5s;
+}
+
+.navbar-toggle .icon-bar {
+	background: #5E7EC1;
+	transition: all .5s;
+}
+
+.scrolled-navbar .navbar-toggle .icon-bar {
+	background: #fff;
+}
+
 .previous {
 	width: 100%;
 	z-index: 50;
 	position: fixed;
 	left: 0;
-	top: 70px;
+	top: 60px;
 }
 
 #btn-previous {
