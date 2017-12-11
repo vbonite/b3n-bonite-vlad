@@ -155,7 +155,7 @@
 /*change navbar properties when scrolling down*/
 .navbar-inverse.scrolled-navbar .navbar-nav>li>a:focus, 
 .navbar-inverse.scrolled-navbar .navbar-nav>li>a:hover {
-	color: #5E7EC1;
+	color: #004581;
     background-color: transparent;
 }
 
@@ -172,7 +172,7 @@
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a, 
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a:focus, 
 .navbar-inverse.scrolled-navbar .navbar-nav>.active>a:hover {
-	color: #5E7EC1;
+	color: #004581;
 	background-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -184,6 +184,7 @@
 }
 
 #btn-apply-nav {
+	border-color: #e0e0e0;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	border-radius: 0;
@@ -193,7 +194,7 @@
 }
 
 .scrolled-navbar #btn-apply-nav {
-	background-color: #337ab7;
+	background-color: #004581;
 	border-color: none;
 	color: #fff !important;
 }
@@ -207,7 +208,7 @@
 }
 
 .navbar-inverse.scrolled-navbar .navbar-toggle {
-	border-color: #5E7EC1;
+	border-color: #004581;
 	background-color: #fff;
 	transition: all .5s;
 }
@@ -218,7 +219,7 @@
 }
 
 .scrolled-navbar .navbar-toggle .icon-bar {
-	background: #5E7EC1;
+	background: #004581;
 }
 
 .nav a {
@@ -290,6 +291,7 @@
 }
 
 #btn-apply {
+	background-color: #004581;
 	border-radius: 0;
 	float: right;
 	padding: 10px 10px 10px;
@@ -321,7 +323,7 @@
 	margin: 0;
 	line-height: 1.5;
 	font-size: 48px;
-	color: #5E7EC1;
+	color: #004581;
 	text-transform: uppercase;
 	font-weight: 300;
 	overflow-wrap: break-word;
@@ -474,7 +476,7 @@
 	padding-top: 20px;
 	line-height: 1;
 	font-size: 32px;
-	color: #5E7EC1;
+	color: #004581;
 	text-transform: uppercase;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
@@ -483,7 +485,7 @@
 .exec-term {
 	line-height: 1;
 	font-size: 20px;
-	color: #5E7EC1;
+	color: #004581;
 	text-transform: uppercase;
 	font-weight: 300;
 	font-family: 'Lato', sans-serif;
@@ -512,7 +514,7 @@
 
 .profile-title {
 	display: block;
-	color: #5E7EC1;
+	color: #004581;
 	font-size: 12;
 	width: 200px;
 }
@@ -534,8 +536,9 @@ footer {
 	margin-top: 60px;
 	padding: 15px;
 	line-height: 1.5;
-	color: #5E7EC1;
+	color: #004581;
 	text-transform: capitalize;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
 
@@ -555,8 +558,8 @@ footer {
 	margin-right: auto;
 	display: inline-block;
 	padding: 20px;
-	border-right: 2px solid #5E7EC1; 
-	border-left: 2px solid #5E7EC1; 
+	border-right: 2px solid #004581; 
+	border-left: 2px solid #004581; 
 }
 
 .social-media a {
@@ -566,7 +569,7 @@ footer {
 .social-media img {
 	width: 30px;
 	height: 30px;
-	background-color: #5E7EC1;
+	background-color: #03131f;
 }
 
 .email {
