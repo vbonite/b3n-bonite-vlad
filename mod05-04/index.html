@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h2>Guess the Number</h2>
+
+	<input type="text" id="number" name="" onfocus="clearHint()">
+
+	<br>
+
+	<button onclick="checkNumber()">Check</button>
+
+	<br>
+
+	<h2 id="display"></h2>
+
+</body>
+
+<script type="text/javascript">
+	var counter = 1;
+	var x = 10;
+
+	while (counter < 5) {
+	function checkNumber() {
+		var number = document.getElementById("number").value;
+		if (number > x) {
+			document.getElementById("display").innerHTML = "Lower";
+		}
+
+		else if (number < x) {
+			document.getElementById("display").innerHTML = "Higher";
+		}
+
+		else {
+			document.getElementById("display").innerHTML = "Correct";
+		}
+	}
+		counter++;
+	}
+
+
+
+	function clearHint() {
+		document.getElementById("display").innerHTML = "";
+	}
+</script>
+</html>

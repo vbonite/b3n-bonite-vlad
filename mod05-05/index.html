@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Intro</title>
+</head>
+<body>
+
+	<input type="text" id="num" name="">
+	<button onclick="getNum()">Go!</button>
+	<p id="show">Show Results Here</p>
+
+</body>
+
+<script type="text/javascript">
+
+	function getNum() {
+		var num = document.getElementById("num").value;
+		document.getElementById("show").innerHTML = num;
+	}
+	
+</script>
+</html>
