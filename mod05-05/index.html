@@ -5,7 +5,9 @@
 </head>
 <body>
 
-	<input type="text" id="num" name="">
+	<input type="text" id="num" name="" placeholder="Enter Amount">
+	<br>
+	<input type="text" id="perc" placeholder="%" name="">
 	<button onclick="getNum()">Go!</button>
 	<p id="show">Show Results Here</p>
 
@@ -14,8 +16,9 @@
 <script type="text/javascript">
 
 	function getNum() {
-		var num = document.getElementById("num").value;
-		document.getElementById("show").innerHTML = num;
+		var num = parseInt(document.getElementById("num").value);
+		var per = parseInt(document.getElementById("perc").value);
+		document.getElementById("show").innerHTML = num*(per/100);
 	}
 	
 </script>
