@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Intro</title>
+</head>
+<body>
+
+	<h1>Sample JS</h1>
+	<h2>Night Class</h2>
+
+	<input type="number" id="input"> <button onclick="getValue()">Draw!</button>
+	<div id="loopDisplay"></div>
+
+</body>
+
+<script type="text/javascript">
+		// var x = 0;
+		// var y = 0;
+
+		// while (x <= 10) {
+		// y = y + x;
+		// x++;
+		// }
+
+		// alert (y);
+
+		// var sum = 0;
+		// var x = 0;
+
+		// while(x <= 10){
+		// 	if (x % 2 == 0){
+		// 	sum += x;}
+		// 	x++;
+		// }
+
+		// alert(sum)
+
+		// var x = 0; //variable declaration
+		// var odd = 0;
+		// var even = 0;
+		
+		// while(x <= 50) {
+		// 	if (x % 2 == 1){
+		// 	odd += x;
+		// 	}
+		// 	else {
+		// 	even += x;
+		// 	}
+		// 	x++;
+		// }
+
+		// for(var x=0; x<=50; x++) {
+		// 	if (x%2==0) {
+		// 		even += x;
+		// 	}
+		// 	else {
+		// 		odd += x;
+		// 	}
+		// }
+
+		// alert("Even: " + even + "\n" + "Odd: " + odd);
+
+		// for(var x=0; x<=20; x++) {
+		// 	if ((x%3 != 0) && (x%5 != 0)) {
+		// 		alert(x + " is NOT a multiple of 5 OR 3");
+		// 	}
+
+		// 	else if ((x%3 != 0) && (x%5 == 0)) {
+		// 		alert(x + " is a multiple of 5 but NOT 3");
+		// 	}
+
+		// 	else if ((x%3 == 0) && (x%5 != 0)) {
+		// 		alert(x + " is a multiple of 3 but NOT 5");
+		// 	}
+
+		// 	else {
+		// 		alert(x + " is a multiple of 3 AND 5");
+		// 	}
+		// }
+
+		function getValue() {
+
+			document.getElementById("loopDisplay").innerHTML = "";
+
+			var input = document.getElementById("input").value;
+
+			for (var x = 0; x < input; x++) {
+			document.getElementById("loopDisplay").innerHTML += "*<br>";
+			}
+		}
+
+
+</script>
+</html>
