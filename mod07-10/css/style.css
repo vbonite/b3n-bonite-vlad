@@ -1,0 +1,16 @@
+/*body {
+	background-color: purple;
+}*/
+
+
+#container {
+	/*background-color: lightgrey;*/
+	width: 40%;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+.completed {
+	color: grey;
+	text-decoration: line-through;
+}
