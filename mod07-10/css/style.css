@@ -1,16 +1,82 @@
-/*body {
-	background-color: purple;
-}*/
+body {
+	background-color: white;
+	/*position: relative;*/
+}
 
 
 #container {
-	/*background-color: lightgrey;*/
+	/*position: absolute;*/
+	background-color: white;
 	width: 40%;
-	margin: 0 auto;
-	border: 2px solid black;
+	/*top: 15%;*/
+	/*left: 30%;*/
+	margin: 10% auto;
+	border: 1px solid black;
+	/*transform: translate(50%,50%);*/
 }
 
 .completed {
 	color: grey;
 	text-decoration: line-through;
+}
+
+.glyphicon-trash {
+	color: white;
+}
+
+
+
+h1 {
+	margin: 0;
+	padding: 10px 20px 10px;
+	background-color: black;
+	text-transform: uppercase;
+	color: white;
+	font-size: 22px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+span {
+	text-align: center;
+	background-color: red;
+	margin-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 0;
+	opacity: 0;
+	transition: 0.2s linear;
+	display: inline-block;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+}
+
+#newTask {
+	width: 100%;
+	padding: 10px 20px 10px;
+	border-style: none;
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	/*margin: 0;*/
+}
+
+/*ul li {
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+}
+
+li:hover {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+*/
+li:hover span {
+	width: 40px;
+	opacity: 1;
+
 }

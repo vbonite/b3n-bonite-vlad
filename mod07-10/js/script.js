@@ -21,6 +21,6 @@ $("input[type='text']").keypress(function(event) {
 	if (event.which === 13) {  //13 == enter key
 		var todoText = $(this).val();
 		$(this).val("");
-		$("ul").append("<li><span>X</span> " + todoText + "</li>");
+		$("ul").append("<li><span class='glyphicon glyphicon-trash'></span> " + todoText + "</li>");
 	}
 });
