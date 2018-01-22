@@ -1,1 +1,0 @@
-console.log('Jquery is working')
