@@ -1,0 +1,42 @@
+[
+    {
+        "username": "admin",
+        "password": "admin",
+        "email": "admin"
+    },
+    {
+        "username": "billy",
+        "password": "billy",
+        "email": "user"
+    },
+    {
+        "username": "user1",
+        "password": "user1",
+        "email": "user"
+    },
+    {
+        "username": "user3",
+        "password": "user3",
+        "email": "user"
+    },
+    {
+        "username": "user4",
+        "password": "user4",
+        "email": "user"
+    },
+    {
+        "username": "user5",
+        "password": "user5",
+        "email": "user"
+    },
+    {
+        "username": "arante",
+        "password": "arante",
+        "email": "arante@user.com"
+    },
+    {
+        "username": "user6",
+        "password": "user6",
+        "email": "user6@google.com"
+    }
+]
