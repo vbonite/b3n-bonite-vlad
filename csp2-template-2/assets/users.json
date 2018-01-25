@@ -2,41 +2,43 @@
     {
         "username": "admin",
         "password": "admin",
-        "email": "admin"
+        "email": "admin@gmail.com",
+        "role": "admin"
     },
     {
-        "username": "billy",
-        "password": "billy",
-        "email": "user"
+        "username": "vbonite",
+        "password": "vbonite",
+        "email": "user@yahoo.com",
+        "role": "admin"
     },
     {
         "username": "user1",
         "password": "user1",
-        "email": "user"
+        "email": "user1@bluebottle.com",
+        "role": "user"
     },
     {
         "username": "user3",
         "password": "user3",
-        "email": "user"
+        "email": "user3@abc.com",
+        "role": "user"
     },
     {
         "username": "user4",
         "password": "user4",
-        "email": "user"
+        "email": "user4@google.com",
+        "role": "user"
     },
     {
         "username": "user5",
         "password": "user5",
-        "email": "user"
-    },
-    {
-        "username": "arante",
-        "password": "arante",
-        "email": "arante@user.com"
+        "email": "user5@yahoo.com",
+        "role": "user"
     },
     {
         "username": "user6",
         "password": "user6",
-        "email": "user6@google.com"
+        "email": "user6@hotmail.com",
+        "role": "user"
     }
 ]

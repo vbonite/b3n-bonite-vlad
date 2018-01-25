@@ -46,5 +46,51 @@ include 'partials/foot.php';
 
 ?>
 
+	<script type="text/javascript">
+		// $('#username').keyup(function() {
+		$('#username').on('input', function() {
+			var usernameText = $(this).val();
+			// console.log(usernameText);
+
+			$.post('assets/username_validation.php',
+				{ username: usernameText },
+				function(data, status) {
+					// console.log('Processed: ' + data);
+					$('[for="username"]').html(data);
+				});
+		});
+
+		$('#confirmPassword').on('input', function() {
+			// console.log($('#password').val());
+			// console.log($('#confirmPassword').val());
+
+			var passwordText = $('#password').val();
+			var confirmPasswordText = $('#confirmPassword').val();
+			if (passwordText != '' || confirmPasswordText != '') {
+				if (passwordText == confirmPasswordText) {
+					// console.log('matched');
+					$('[for="password"]').html('Password <span class="green-message">matched</span>');
+				} else {
+					// console.log('mismatched');
+					$('[for="password"]').html('Password <span class="red-message">mismatched</span>');
+				}
+			} else {
+				$('[for="password"]').html('Password');	
+			}
+		});
+
+		$('#email').on('input', function() {
+			var emailText = $(this).val();
+			// console.log(usernameText);
+
+			$.post('assets/email_address_validation.php',
+				{ email: emailText },
+				function(data, status) {
+					// console.log('Processed: ' + data);
+					$('[for="email"]').html(data);
+				});
+		});
+	</script>
+
 </body>
 </html>
