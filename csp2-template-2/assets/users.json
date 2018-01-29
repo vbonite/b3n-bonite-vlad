@@ -6,16 +6,10 @@
         "role": "admin"
     },
     {
-        "username": "vbonite",
-        "password": "vbonite",
+        "username": "vlad",
+        "password": "vlad",
         "email": "user@yahoo.com",
         "role": "admin"
-    },
-    {
-        "username": "user1",
-        "password": "user1",
-        "email": "user1@bluebottle.com",
-        "role": "user"
     },
     {
         "username": "user3",
@@ -31,8 +25,8 @@
     },
     {
         "username": "user5",
-        "password": "user5",
-        "email": "user5@yahoo.com",
+        "password": "123",
+        "email": "user5@google.com",
         "role": "user"
     },
     {
