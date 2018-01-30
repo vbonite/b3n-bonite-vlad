@@ -58,7 +58,7 @@ include 'partials/head.php';
 			</tr>
 		</table>
 
-		<a href="catalog.php">
+		<a href="catalog.php?category=<?php echo $items[$id]['category']; ?>$search=">
 			<button class="btn btn-default">Back</button>
 		</a>
 		<!-- Trigger modal with button -->
