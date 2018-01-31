@@ -26,6 +26,9 @@
 
         ?>
         <li>
+          <a href="cart.php">My Cart</a>
+        </li>
+        <li>
           <a href="about.php">About</a></li>
         <li>
           <a href="careers.php">Careers</a>

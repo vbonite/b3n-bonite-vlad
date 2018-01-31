@@ -88,7 +88,8 @@ if (isset($_GET['search']) && $_GET['category'] !== 'All') {
 							<p>'.$item['description'].'</p>
 						</div>  <!-- /.item-container -->
 						</a>
-						<button class="btn btn-primary form-control">Add to Cart</button>
+						<input id="itemQuantity'.$item['id'].'" type="number" value="0" min="0">
+						<button class="btn btn-primary form-control" onclick="addToCart('.$item['id'].')">Add to Cart</button>
 					</div>
 				';
 			}
@@ -106,6 +107,27 @@ if (isset($_GET['search']) && $_GET['category'] !== 'All') {
 include 'partials/foot.php';
 
 ?>
+
+<script type="text/javascript">
+	
+	function addToCart(itemId) {
+		var id = itemId;
+
+		var quantity = $('#itemQuantity' + id).val();
+
+		$.post('assets/add_to_cart.php',
+			{
+				item_id: id,
+				item_quantity: quantity
+			},
+			function(data, status) {
+				$('a[href="cart.php"]').html('My Cart ' + data);
+			}
+		);
+	};
+
+</script>
+
 
 </body>
 </html>
