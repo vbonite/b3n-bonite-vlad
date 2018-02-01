@@ -81,12 +81,12 @@ include 'partials/head.php';
 
  						// echo $product['id'] . "=" .$product['name'] ."<br>";
  					?>
- 						<tr>
+ 						<tr id="removeItem<?php echo $id; ?>">
 							<td><?php echo $products[$id]["name"]; ?></td>
 							<td><?php echo $item; ?></td>
 							<td><?php echo $products[$id]["price"]; ?></td>
-							<td><?php echo $subtotal; ?></td>
-							<td><span class="glyphicon glyphicon-trash" id="removeItem<?php echo $id; ?>"></span></td>
+							<td class="subtotal"><?php echo $subtotal; ?></td>
+							<td><span class="glyphicon glyphicon-trash" onclick="removeFromCart(<?php echo $id; ?>)"></span></td>
 						</tr>
 
 					<?php
@@ -100,7 +100,7 @@ include 'partials/head.php';
 		 	</tbody>
 		 </table>
 
-		 <h3>Total Amout: <?php echo $totalAmt; ?></h3>
+		 <h3 id=totalAmt >Total Amount: <?php echo $totalAmt; ?></h3>
 
 	</main>
 
@@ -112,6 +112,42 @@ include 'partials/head.php';
 include 'partials/foot.php';
 
 ?>
+
+<script type="text/javascript">
+	
+	function removeFromCart(id) {
+		$('tr#removeItem' + id).remove();
+
+		$.post('assets/delete_from_cart.php',
+			{
+				item_id: id
+			},
+			function(data, status) {
+				$('a[href="cart.php"]').html('My Cart ' + data);
+			}
+		);
+
+		computeTotal();
+	}
+
+	function computeTotal() {
+		var totalAmt = 0;
+		var subtotal = document.querySelectorAll('.subtotal');
+		var itemCount = subtotal.length;
+
+		for (var i = 0; i < itemCount; i++) {
+			var price = parseFloat(subtotal[i].innerText);
+			totalAmt = totalAmt + price;
+		}
+
+
+
+
+		$('h3#totalAmt').html('Total Amount: ' + totalAmt);
+
+	}
+
+</script>
 
 </body>
 </html>
