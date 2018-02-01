@@ -83,7 +83,7 @@ include 'partials/head.php';
  					?>
  						<tr id="removeItem<?php echo $id; ?>">
 							<td><?php echo $products[$id]["name"]; ?></td>
-							<td><?php echo $item; ?></td>
+							<td><?php echo '<input id="itemQuantity" type="number" value="'.$item.'" min="0"' ?></td>
 							<td><?php echo $products[$id]["price"]; ?></td>
 							<td class="subtotal"><?php echo $subtotal; ?></td>
 							<td><span class="glyphicon glyphicon-trash" onclick="removeFromCart(<?php echo $id; ?>)"></span></td>
