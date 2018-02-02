@@ -83,10 +83,10 @@ include 'partials/head.php';
  					?>
  						<tr id="removeItem<?php echo $id; ?>">
 							<td><?php echo $products[$id]["name"]; ?></td>
-							<td><?php echo '<input id="itemQuantity" type="number" value="'.$item.'" min="0"' ?></td>
-							<td><?php echo $products[$id]["price"]; ?></td>
+							<td class="quantity"><input id="itemQuantity<?php echo $id?>" type="number" value="<?php echo $item ?>" min="0"> <button class="btn btn-primary" onclick="updateItemCart(<?php echo $id; ?>)">update</button></td>
+							<td class="price"><?php echo $products[$id]["price"]; ?></td>
 							<td class="subtotal"><?php echo $subtotal; ?></td>
-							<td><span class="glyphicon glyphicon-trash" onclick="removeFromCart(<?php echo $id; ?>)"></span></td>
+							<td><button class="btn btn-danger" onclick="removeFromCart(<?php echo $id; ?>)"><span class="glyphicon glyphicon-trash"></span></button></td>
 						</tr>
 
 					<?php
@@ -136,8 +136,8 @@ include 'partials/foot.php';
 		var itemCount = subtotal.length;
 
 		for (var i = 0; i < itemCount; i++) {
-			var price = parseFloat(subtotal[i].innerText);
-			totalAmt = totalAmt + price;
+			var amount = parseFloat(subtotal[i].innerText);
+			totalAmt = totalAmt + amount;
 		}
 
 
